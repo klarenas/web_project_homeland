@@ -24,7 +24,7 @@
     padding-top: 36px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 545px) and (max-width: 1024px) {
     .lead {
         padding-top: 90px;
     }
@@ -38,7 +38,7 @@
     }
 }
 
-@media screen and (min-width: 544px) and (max-width: 1023px) {
+@media screen and (min-width: 320px) and (max-width: 544px) {
     .lead {
         max-width: 768px;
         padding-top: 90px;
