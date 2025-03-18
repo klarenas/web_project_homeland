@@ -16,7 +16,7 @@ Este proyecto es una página web responsiva que presenta lugares interesantes pa
 
 ## Demostración
 
-[Ver proyecto en GitHub Pages](https://klarenas.github.io/web_project_homeland/)
+[Ver proyecto en GitHub Pages](git@github.com:klarenas/web_project_homeland.git)
 
 ## Planes de Mejora
 
