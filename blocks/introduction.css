@@ -43,7 +43,7 @@
   text-align: left;
 }
 
-@media screen and (min-width: 545px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .introduction {
     padding: 88px 24px 0;
   }
