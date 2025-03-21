@@ -43,14 +43,6 @@
   text-align: left;
 }
 
-@media screen and (max-width: 1024px) {
-  .introduction__text,
-  .introduction__author,
-  .introduction__paragraph {
-    max-width: 288px;
-  }
-}
-
 @media screen and (min-width: 545px) and (max-width: 1024px) {
   .introduction {
     padding: 88px 24px 0;
