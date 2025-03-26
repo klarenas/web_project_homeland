@@ -1,0 +1,92 @@
+.photo {
+  background: #2a2c2f;
+  color: #fff;
+  max-width: 984px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+}
+
+.photo__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "title artist"
+    "image text"
+    "button button";
+}
+
+.photo__title {
+  grid-area: title;
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+  padding: 90px 120px 45px 0;
+  margin: 0;
+}
+
+.photo__artist {
+  grid-area: artist;
+  padding: 0 50px 50px 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.photo__artist-title {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin: 0 0 8px;
+}
+
+.photo__artist-name {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.photo__image-container {
+  grid-area: image;
+  margin: 0;
+  filter: drop-shadow(10px 10px 25px rgba(0, 0, 0, 0.5));
+}
+
+.photo__image {
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo__text-content {
+  grid-area: text;
+  padding-left: 40px;
+}
+
+.photo__text {
+  font-size: 18px;
+  line-height: 1.63;
+  margin: 0 0 20px;
+}
+
+.photo__button {
+  grid-area: button;
+  padding: 13px 20px;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #fff;
+  justify-self: start;
+  transition: opacity 0.3s;
+}
+
+.photo__button:hover {
+  background: linear-gradient(90deg, #0063d2 0%, #002c5e 99.98%);
+  opacity: 0.9;
+}
