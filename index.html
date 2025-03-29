@@ -29,7 +29,7 @@
           <p class="lead__subtitle">
             Un viaje épico de Kentucky a Burundi pasando por Gales y Ucrania
           </p>
-          <div class="lead__image">
+          <figure class="lead__image">
             <img
               src="./images/__imagen_un_viaje_epico.jpg"
               alt="Imagen playa y ciudad"
@@ -37,6 +37,7 @@
             />
           </div>
         </section>
+
         <section class="introduction" id="introduction">
           <h2 class="introduction__title">
             Conoce un poco mejor los lugares de los que proceden tus colegas en
@@ -61,62 +62,63 @@
             nos alegra que seas nuestro vecino.
           </p>
         </section>
+
         <section class="places" id="places">
-          <images class="places__grid">
+          <div class="places__grid">
             <img
-              src="./images/__item.png"
+              src="./images/__kiev.png"
               alt="Paisaje de Kiev"
               class="places__image"
             />
             <img
-              src="./images/__item2.png"
+              src="./images/__cricieth.png"
               alt="Paisaje de Criccieth"
               class="places__image"
             />
             <img
-              src="./images/__item3.png"
+              src="./images/__berea.png"
               alt="Paisaje de Berea"
               class="places__image"
             />
             <img
-              src="./images/__item4.png"
+              src="./images/__muramvya.png"
               alt="Paisaje de Muramvya"
               class="places__image"
             />
             <img
-              src="./images/__item5.png"
+              src="./images/__paisaje.png"
               alt="Paisaje de Ciudad"
               class="places__image"
             />
             <img
-              src="./images/__item6.png"
-              alt="Paisaje de Ciudad"
+              src="./images/__park.png"
+              alt="Paisaje de Parque"
               class="places__image"
             />
             <img
-              src="./images/__item7.png"
-              alt="Paisaje de Ciudad"
+              src="./images/__kampala.png"
+              alt="Paisaje de Kampala"
               class="places__image"
             />
             <img
-              src="./images/__item8.png"
-              alt="Paisaje de Ciudad"
+              src="./images/__ucrania.png"
+              alt="Paisaje de Ucrania"
               class="places__image"
             />
-          </images>
+          </div>
         </section>
 
-        <article class="photo" id="photo">
+        <article class="photos-container">
           <section class="photo__grid">
             <h3 class="photo__title">Cricieth, Gales</h3>
-            <aside class="photo__artist">
+            <div class="photo__artist">
               <p class="photo__artist-title">Artistas</p>
               <p class="photo__artist-name">Steffan Warren, editor jefe</p>
               <p class="photo__artist-name">
                 Kseniya Glagoleva, gerente de proyectos
               </p>
-            </aside>
-            <section class="photo__text-content">
+            </div>
+            <div class="photo__text-content">
               <p class="photo__text">
                 Las ruinas medievales del castillo de Cricieth dominan la ciudad
                 desde una roca que extiende sobre el mar. Se cree que fue
@@ -135,7 +137,7 @@
                 David Lloyd George, el único galés que ha sido Primer Ministro
                 del Reino Unido.
               </p>
-            </section>
+            </div>
             <figure class="photo__image-container">
               <img
                 src="./images/__criciet_gales.png"
@@ -151,8 +153,136 @@
               >Compra esta obra como NFT</a
             >
           </section>
+          <section class="photo__grid">
+            <h3 class="photo__title">Berea, EE. UU.</h3>
+            <div class="photo__artist">
+              <p class="photo__artist-title">Artista</p>
+              <p class="photo__artist-name">Travis Turner, autor y editor</p>
+            </div>
+            <div class="photo__text-content">
+              <p class="photo__text">
+                Berea es una pequeña ciudad ubicada en la parte central de
+                Kentucky. La ciudad está rodeada por hermosos bosques y campos.
+                Es conocida como la capital de la artesanía del estado, y sus
+                visitantes hallarán infinitas posibilidades para ir de compras:
+                tiendas de joyas, velas y artículos de madera artesanales;
+                galerías, talleres de vidrio y más. La ciudad celebra un
+                festival anual que rinde tributo al "spoonbread", un platillo
+                local hecho de pan de maíz y que se sirve con una cuchara de
+                madera.
+              </p>
+              <p class="photo__text">
+                Aunque, probablemente es mejor conocida por su universidad. El
+                Berea College fue fundado en 1855 y fue la primera universidad
+                sureña integrada racialmente, así como la primera en ser
+                coeducacional. Algo que en cierta manera la hace única, es que
+                no cobra colegiatura: cada estudiante recibe una beca del 100%.
+              </p>
+            </div>
+            <figure class="photo__image-container">
+              <img
+                src="./images/__berea_ee_uu.png"
+                alt="Paisaje de Berea"
+                class="photo__image"
+              />
+            </figure>
+            <a
+              href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"
+              class="photo__button"
+              target="_blank"
+              rel="noopener"
+              >Compra esta obra como NFT</a
+            >
+          </section>
+          <section class="photo__grid">
+            <h3 class="photo__title">Muramvya, Burundi</h3>
+            <div class="photo__artist">
+              <p class="photo__artist-title">Artista</p>
+              <p class="photo__artist-name">
+                Grevisse Kenguruka, editor técnico
+              </p>
+            </div>
+            <div class="photo__text-content">
+              <p class="photo__text photo__text_type_muramvya">
+                Muramvya es una de las 18 provincias de Burundi. Durante la
+                época del reino, Muramvya fue su capital; y en 2017, gracias a
+                su paisaje cultural y natural, se añadió a la Lista provisional
+                de patrimonio mundial de la UNESCO. Se encuentra ubicada en el
+                centro de Burundi, entre las capitales política y económica del
+                país. Su clima es más bien frío durante la noche, pero durante
+                el día, podrías pensar que estás en el paraíso. A sus 2,665
+                metros (8,743 ft) sobre el nivel del mar, el Monte Teza es uno
+                de los lugares más fríos de la provincia. Pero es justo esa
+                brisa fresca la que da pie a una de las más grandes plantaciones
+                de té y café del país, y que representa la mayoría de las
+                exportaciones de Burundi. El Parque nacional de Kibira, una de
+                las mayores reservas de vida silvestre para los simios, ocupa
+                parte de cuatro provincias, incluyendo Muramvya. Este parque
+                nacional se encuentra en las cúspides de las hermosas montañas
+                de la Divisoria Congo-Nilo, cuyas alturas oscilan entre 1,550 y
+                2,660 metros. Está lleno de hermosa vegetación, y es una fuente
+                para los diversos ríos y arroyos que proporcionan agua alrededor
+                del país.
+              </p>
+            </div>
+            <figure class="photo__image-container">
+              <img
+                src="./images/__burundi.png"
+                alt="Paisaje de Burundi"
+                class="photo__image"
+              />
+            </figure>
+            <a
+              href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"
+              class="photo__button"
+              target="_blank"
+              rel="noopener"
+              >Compra esta obra como NFT</a
+            >
+          </section>
+          <section class="photo__grid">
+            <h3 class="photo__title">Teotihuacán, México</h3>
+            <div class="photo__artist">
+              <p class="photo__artist-title">Artista</p>
+              <p class="photo__artist-name">Karina Gonzalez Larenas</p>
+            </div>
+            <div class="photo__text-content">
+              <p class="photo__text">
+                Teotihuacán, Patrimonio de la Humanidad desde 1987, es una de
+                las ciudades prehispánicas más imponentes de Mesoamérica,
+                destaca por su compleja organización urbana y su majestuosidad
+                arquitectónica. Su nombre en náhuatl significa "lugar donde los
+                dioses fueron creados", reflejando su importancia mítica y
+                cultural.
+              </p>
+              <p class="photo__text">
+                Ubicada al noreste de Ciudad de México, alcanzó 35 km² se diseñó
+                con alineaciones geográficas y astronómicas.
+              </p>
+              <p class="photo__text">
+                Sus icónicas Pirámides del Sol y de la Luna, construidas entre
+                el año 1 y 250 d.C., reflejan el ingenio y la espiritualidad de
+                esta civilización, cuyo legado sigue asombrando al mundo.
+              </p>
+            </div>
+            <figure class="photo__image-container">
+              <img
+                src="./images/_teotihuacan_.jpg"
+                alt="Paisaje de Teotihuacán"
+                class="photo__image"
+              />
+            </figure>
+            <a
+              href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq"
+              class="photo__button"
+              target="_blank"
+              rel="noopener"
+              >Compra esta obra como NFT</a
+            >
+          </section>
         </article>
       </main>
+
       <footer class="footer">
         <p class="footer__copyright">&#169; Triple Peaks 2025 Kl@renas</p>
       </footer>
