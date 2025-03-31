@@ -1,7 +1,6 @@
 .photo {
   margin: 0;
 }
-
 .photo__grid {
   display: grid;
   grid-template-columns: minmax(460px, 1fr) minmax(484px, 1fr);
@@ -13,7 +12,6 @@
   max-width: 984px;
   margin: 0 auto;
 }
-
 .photo__title {
   grid-area: title;
   max-width: 460px;
@@ -24,12 +22,10 @@
   font-weight: 900;
   align-self: end;
 }
-
 .photo__artist {
   grid-area: artist;
   align-self: end;
 }
-
 .photo__artist-title {
   margin: 0;
   font-size: 12px;
@@ -38,17 +34,14 @@
   text-transform: uppercase;
   color: #aaa;
 }
-
 .photo__artist-name {
   margin: 8px 0 0;
   font-size: 18px;
   line-height: 1.22;
 }
-
 .photo__artist-name:last-child {
   padding-bottom: 48px;
 }
-
 .photo__image-container {
   grid-area: image;
   position: relative;
@@ -58,7 +51,6 @@
   align-self: start;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
 }
-
 .photo__image {
   width: 100%;
   height: 100%;
@@ -66,35 +58,30 @@
   display: block;
   transition: opacity 0.3s ease;
 }
-
 .photo__image:hover {
   opacity: 0.8;
   cursor: pointer;
 }
-
 .photo__text-content {
   grid-area: text;
   align-self: start;
   max-width: 460px;
 }
-
 .photo__text {
   margin: 0 0 16px;
   font-size: 14px;
   line-height: 1.4;
 }
-
 .photo__text:last-child {
   margin-bottom: 0;
 }
-
 .photo__button {
   grid-area: button;
   width: 289px;
   height: 48px;
   margin-top: 48px;
   padding: 0;
-  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   border-radius: 4px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   color: #fff;
@@ -103,67 +90,55 @@
   line-height: 48px;
   text-align: center;
   justify-self: start;
-  transition: background 0.3s ease;
+  transition: background-image 0.3s ease;
 }
-
 .photo__button:hover {
   background: linear-gradient(90deg, #0063d2 0%, #002c5e 99.98%);
   opacity: 0.9;
 }
-
 @media screen and (max-width: 1024px) {
   .photos-container {
     padding: 88px 24px 80px;
   }
-
   .photo__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     max-width: 928px;
   }
-
   .photo__title {
     max-width: 380px;
     padding-bottom: 20px;
     font-size: 50px;
     line-height: 42px;
   }
-
   .photo__artist-title {
     font-size: 10px;
     line-height: 14px;
   }
-
   .photo__artist-name {
     font-size: 16px;
     line-height: 20px;
   }
-
   .photo__artist-name:last-child {
     padding-bottom: 20px;
   }
-
   .photo__text-content {
     max-width: 380px;
   }
-
   .photo__text {
     margin: 0 0 12px;
     font-size: 14px;
     line-height: 1.4;
   }
-
   .photo__button {
     width: 280px;
     margin-top: 10px;
   }
 }
-
 @media screen and (max-width: 540px) {
   .photos-container {
     padding: 64px 16px;
   }
-
   .photo__grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -176,43 +151,35 @@
     max-width: 340px;
     margin: 0 auto;
   }
-
   .photo__title {
     padding-bottom: 16px;
     font-size: 42px;
     line-height: 46px;
   }
-
   .photo__text-content {
     max-width: 100%;
     margin-top: 30px;
   }
-
   .photo__text {
     font-size: 14px;
     line-height: 1.25;
   }
-
   .photo__button {
     width: 100%;
     margin-top: 30px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .photos-container {
     padding: 62px 16px;
   }
-
   .photo__grid {
     max-width: 288px;
   }
-
   .photo__title {
     font-size: 32px;
     line-height: 35px;
   }
-
   .photo__text {
     font-size: 14px;
     line-height: 1.25;

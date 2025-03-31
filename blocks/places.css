@@ -4,7 +4,6 @@
   padding: 118px 0 0;
   box-sizing: border-box;
 }
-
 .places__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -13,49 +12,38 @@
   max-width: 1184px;
   margin: 0 auto;
 }
-
 .places__image {
   width: 100%;
   aspect-ratio: 1.33;
   object-fit: cover;
   display: block;
 }
-
 @media screen and (max-width: 1024px) {
   .places {
     padding: 90px 24px 0;
   }
-
   .places__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 14px;
   }
 }
-
-
-}
-
 @media screen and (max-width: 540px) {
   .places {
     padding: 88px 16px 0;
   }
-
   .places__grid {
     gap: 12px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .places {
     padding: 62px 16px 0;
   }
-
   .places__grid {
     grid-template-columns: 1fr;
     gap: 12px;
     max-width: 288px;
   }
-
   .places__image {
     aspect-ratio: 1.33;
   }
