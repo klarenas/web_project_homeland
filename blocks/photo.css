@@ -1,0 +1,177 @@
+.photo__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "title title"
+    "artist artist"
+    "text image"
+    "button button";
+  gap: 48px;
+  max-width: 984px;
+  margin: 0 auto 80px;
+}
+
+.photo__title {
+  grid-area: title;
+  margin: 0;
+  font-size: 72px;
+  line-height: 1.06;
+  font-weight: 900;
+}
+
+.photo__artist {
+  grid-area: artist;
+  margin: 0;
+}
+
+.photo__artist-title {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.photo__artist-name {
+  margin: 8px 0 0;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.photo__artist-name:last-of-type {
+  margin-bottom: 0;
+}
+
+.photo__image-container {
+  grid-area: image;
+  position: relative;
+  width: 460px;
+  height: 460px;
+}
+
+.photo__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo__image:hover {
+  opacity: 0.8;
+}
+
+.photo__text-content {
+  grid-area: text;
+  max-width: 484px;
+}
+
+.photo__text {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.63;
+}
+
+.photo__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.photo__button {
+  grid-area: button;
+  justify-self: center;
+  margin-top: 48px;
+  padding: 13px 20px;
+  background: #0278fe;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.22;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.photo__button:hover {
+  background: #0063d2;
+}
+
+@media screen and (max-width: 1100px) {
+  .photo__grid {
+    max-width: 720px;
+    gap: 36px;
+    margin-bottom: 72px;
+  }
+
+  .photo__text-content {
+    max-width: 352px;
+  }
+
+  .photo__title {
+    font-size: 42px;
+    line-height: 1.14;
+  }
+
+  .photo__artist-title {
+    margin-bottom: 8px;
+  }
+
+  .photo__artist-name {
+    margin-top: 0;
+  }
+
+  .photo__image-container {
+    width: 340px;
+    height: 340px;
+  }
+
+  .photo__button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .photo__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "text"
+      "button";
+    gap: 30px;
+    max-width: 288px;
+    margin: 0 auto;
+  }
+
+  .photo__image-container {
+    width: 100%;
+    height: 248px;
+  }
+
+  .photo__button {
+    width: 100%;
+    margin-top: 0;
+    justify-self: stretch;
+  }
+
+  .photo__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .photo__text-content {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .photo__grid {
+    gap: 20px;
+  }
+
+  .photo__image-container {
+    height: 200px;
+  }
+
+  .photo__artist-name {
+    font-size: 16px;
+  }
+}
