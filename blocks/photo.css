@@ -49,7 +49,7 @@
   aspect-ratio: 1.33;
   margin: 0;
   align-self: start;
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.5);
 }
 .photo__image {
   width: 100%;
@@ -57,10 +57,11 @@
   object-fit: cover;
   display: block;
   transition: opacity 0.3s ease;
+  position: relative;
 }
 .photo__image:hover {
-  opacity: 0.8;
   cursor: pointer;
+  opacity: 0.5;
 }
 .photo__text-content {
   grid-area: text;
@@ -81,7 +82,7 @@
   height: 48px;
   margin-top: 48px;
   padding: 0;
-  background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 100%);
   border-radius: 4px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   color: #fff;
@@ -90,10 +91,14 @@
   line-height: 48px;
   text-align: center;
   justify-self: start;
-  transition: background-image 0.3s ease;
+  transition: background 0.3s ease;
 }
 .photo__button:hover {
-  background-image: linear-gradient(90deg, #0057b3 0%, #001a3d 99.98%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
   opacity: 0.9;
 }
 @media screen and (max-width: 1024px) {
