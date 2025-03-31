@@ -30,10 +30,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 14px;
   }
+}
 
-  .places__image {
-    aspect-ratio: 1.33;
-  }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -42,12 +41,7 @@
   }
 
   .places__grid {
-    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-  }
-
-  .places__image {
-    aspect-ratio: 1.33;
   }
 }
 
