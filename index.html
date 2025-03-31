@@ -6,11 +6,10 @@
     <title>Patria a patria</title>
     <meta
       name="description"
-      content="Esta pagina te  lleva a conocer sitios de colegas de TripleTen"
+      content="Esta página te lleva a conocer sitios de colegas de TripleTen"
     />
     <meta name="author" content="Klarenas" />
     <meta name="keywords" content="SEO, optimización web, HTML, VSCode" />
-
     <link rel="icon" href="./favicon.svg" />
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
@@ -24,22 +23,26 @@
         />
       </header>
       <main class="content">
-        <section class="lead">
+        <section class="lead" aria-label="Introducción">
           <h1 class="lead__title">De patria a patria</h1>
           <p class="lead__subtitle">
             Un viaje épico de Kentucky a Burundi pasando por Gales y Ucrania
           </p>
-          <figure class="lead__image">
+          <figure class="lead__image" aria-label="Imagen principal">
             <img
               src="./images/__imagen_un_viaje_epico.jpg"
-              alt="Imagen playa y ciudad"
+              alt="Vista panorámica de una ciudad costera con playa"
               class="lead__image-content"
             />
-          </div>
+          </figure>
         </section>
 
-        <section class="introduction" id="introduction">
-          <h2 class="introduction__title">
+        <section
+          class="introduction"
+          id="introduction"
+          aria-labelledby="intro-title"
+        >
+          <h2 class="introduction__title" id="intro-title">
             Conoce un poco mejor los lugares de los que proceden tus colegas en
             línea
           </h2>
@@ -63,7 +66,7 @@
           </p>
         </section>
 
-        <section class="places" id="places">
+        <section class="places" id="places" aria-label="Galería de lugares">
           <div class="places__grid">
             <img
               src="./images/__kiev.png"
@@ -108,18 +111,25 @@
           </div>
         </section>
 
-        <article class="photos-container">
-          <section class="photo__grid">
-            <h3 class="photo__title">Cricieth, Gales</h3>
-            <div class="photo__artist">
+        <article
+          class="photos-container"
+          role="region"
+          aria-label="Historias de lugares"
+        >
+          <section class="photo__grid" aria-labelledby="cricieth-title">
+            <h3 class="photo__title" id="cricieth-title">Cricieth, Gales</h3>
+            <div class="photo__artist" role="complementary">
               <p class="photo__artist-title">Artistas</p>
               <p class="photo__artist-name">Steffan Warren, editor jefe</p>
               <p class="photo__artist-name">
                 Kseniya Glagoleva, gerente de proyectos
               </p>
             </div>
-            <div class="photo__text-content">
-              <p class="photo__text">
+            <div
+              class="photo__text-content"
+              aria-describedby="cricieth-description"
+            >
+              <p class="photo__text" id="cricieth-description">
                 Las ruinas medievales del castillo de Cricieth dominan la ciudad
                 desde una roca que extiende sobre el mar. Se cree que fue
                 construido por Llewelyn el Grande en el S. XIII. 800 años
@@ -153,14 +163,19 @@
               >Compra esta obra como NFT</a
             >
           </section>
-          <section class="photo__grid">
-            <h3 class="photo__title">Berea, EE. UU.</h3>
-            <div class="photo__artist">
+
+          <section
+            class="photo__grid"
+            aria-labelledby="berea-title"
+            aria-describedby="berea-description"
+          >
+            <h3 class="photo__title" id="berea-title">Berea, EE. UU.</h3>
+            <div class="photo__artist" role="complementary">
               <p class="photo__artist-title">Artista</p>
               <p class="photo__artist-name">Travis Turner, autor y editor</p>
             </div>
             <div class="photo__text-content">
-              <p class="photo__text">
+              <p class="photo__text" id="berea-description">
                 Berea es una pequeña ciudad ubicada en la parte central de
                 Kentucky. La ciudad está rodeada por hermosos bosques y campos.
                 Es conocida como la capital de la artesanía del estado, y sus
@@ -194,16 +209,23 @@
               >Compra esta obra como NFT</a
             >
           </section>
-          <section class="photo__grid">
-            <h3 class="photo__title">Muramvya, Burundi</h3>
-            <div class="photo__artist">
+          <section
+            class="photo__grid"
+            aria-labelledby="muramvya-title"
+            aria-describedby="muramvya-description"
+          >
+            <h3 class="photo__title" id="muramvya-title">Muramvya, Burundi</h3>
+            <div class="photo__artist" role="complementary">
               <p class="photo__artist-title">Artista</p>
               <p class="photo__artist-name">
                 Grevisse Kenguruka, editor técnico
               </p>
             </div>
             <div class="photo__text-content">
-              <p class="photo__text photo__text_type_muramvya">
+              <p
+                class="photo__text photo__text_type_muramvya"
+                id="muramvya-description"
+              >
                 Muramvya es una de las 18 provincias de Burundi. Durante la
                 época del reino, Muramvya fue su capital; y en 2017, gracias a
                 su paisaje cultural y natural, se añadió a la Lista provisional
@@ -240,14 +262,20 @@
               >Compra esta obra como NFT</a
             >
           </section>
-          <section class="photo__grid">
-            <h3 class="photo__title">Teotihuacán, México</h3>
-            <div class="photo__artist">
+          <section
+            class="photo__grid"
+            aria-labelledby="teotihuacan-title"
+            aria-describedby="teotihuacan-description"
+          >
+            <h3 class="photo__title" id="teotihuacan-title">
+              Teotihuacán, México
+            </h3>
+            <div class="photo__artist" role="complementary">
               <p class="photo__artist-title">Artista</p>
               <p class="photo__artist-name">Karina Gonzalez Larenas</p>
             </div>
             <div class="photo__text-content">
-              <p class="photo__text">
+              <p class="photo__text" id="teotihuacan-description">
                 Teotihuacán, Patrimonio de la Humanidad desde 1987, es una de
                 las ciudades prehispánicas más imponentes de Mesoamérica,
                 destaca por su compleja organización urbana y su majestuosidad
