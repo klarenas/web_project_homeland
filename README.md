@@ -75,4 +75,4 @@ Para futuras iteraciones del proyecto, se consideran las siguientes mejoras:
 ## Autor
 
 Desarrollado por Kl@renas como parte del bootcamp de Desarrollo Web en Tripleten.
-< https://klarenas.github.io/web_project_homeland/>
+<https://klarenas.github.io/web_project_homeland/>
